@@ -1,9 +1,6 @@
 from fastapi import FastAPI
-from fastapi.responses import FileResponse
+from routes import router
 
 
 app = FastAPI()
-
-@app.get('/')
-async def read_root():
-    return FileResponse("templates/mapa.html")
+app.include_router(router)

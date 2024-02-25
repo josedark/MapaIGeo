@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Carga de Archivos</title>
+</head>
+<body>
+
+<h1>Formulario de Carga de Archivos</h1>
+
+<form action="/upload"" method="post" enctype="multipart/form-data">
+    <label for="archivo">Selecciona un archivo:</label>
+    <input type="file" id="archivo" name="file" accept=".pdf, .doc, .docx,.csv">
+    <br>
+
+    <input type="submit" value="Subir Archivo"  >
+</form>
+
+</body>
+</html>
